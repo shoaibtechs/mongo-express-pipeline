@@ -2,6 +2,15 @@ const express =  require("express");
 const app = express();
 const port = 8080;
 const mongoose =  require("mongoose");
+const path = require("path");
+
+
+app.set("views", path.join(__dirname, "views"));
+app.set("views engine", "ejs");
+
+
+
+
 
 async function main()
 {
