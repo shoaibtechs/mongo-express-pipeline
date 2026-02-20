@@ -100,3 +100,12 @@ app.get("/chats", async (req, res)=>{
 
 
 
+//new Route 
+
+
+app.get("/chats/new", (req, res)=>{
+
+
+    res.render("new.ejs");
+
+})
