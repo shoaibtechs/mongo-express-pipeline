@@ -194,6 +194,7 @@ app.delete("/chats/:id", async (req, res)=>{
     let deletedChat =  await Chat.findByIdAndDelete(id);
 
     console.log(deletedChat);
+    console.log(deletedChat);
 
     res.redirect("/chats");
 
